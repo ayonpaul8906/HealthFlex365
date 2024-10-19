@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Fitness Guide</title>
+  <link rel="stylesheet" href="css/mental_guidance.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Mental Health Fitness Guide</h1>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Unlock Your Well-being with Tailored Mental Health Advice</h2>
+      <p>Answer a few questions about your health condition to receive customized guidance on sleep, diet, exercise, and mental wellness.</p>
+      <button onclick="startQuiz()">Get Started</button>
+    </div>
+    <div class="hero-image">
+      <img src="images/mental_health.png" alt="Mental Health Guidance">
+    </div>
+  </section>
+
+  <section id="quizSection" class="quiz-section hidden">
+    <h2>Answer These Questions for Personalized Guidance</h2>
+    <form id="healthForm">
+      <div class="question">
+        <label for="age">What is your age?</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+      <div class="question">
+        <label for="stressLevel">How often do you feel stressed?</label>
+        <select id="stressLevel" name="stressLevel" required>
+          <option value="low">Rarely</option>
+          <option value="moderate">Sometimes</option>
+          <option value="high">Often</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="sleep">How many hours do you sleep per night?</label>
+        <input type="number" id="sleep" name="sleep" required>
+      </div>
+      <div class="question">
+        <label for="exercise">How often do you exercise?</label>
+        <select id="exercise" name="exercise" required>
+          <option value="none">Never</option>
+          <option value="sometimes">A few times a week</option>
+          <option value="regularly">Every day</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="screenTime">How many hours of screen time (phone, TV, computer) do you have daily?</label>
+        <input type="number" id="screenTime" name="screenTime" required>
+      </div>
+      <div class="question">
+        <label for="foodHabits">What describes your eating habits best?</label>
+        <select id="foodHabits" name="foodHabits" required>
+          <option value="balanced">Balanced (proteins, carbs, vegetables)</option>
+          <option value="junk">Mostly junk/fast food</option>
+          <option value="low-calorie">Low-calorie diet</option>
+        </select>
+      </div>
+      <button type="submit">Get Guidance</button>
+    </form>
+  </section>
+
+  <section id="resultSection" class="result-section hidden">
+    <h2>Your Tailored Mental Health Guidance</h2>
+    <div id="guidanceOutput" class="guidance-output"></div>
+    <button class="large-button" onclick="restartQuiz()">Retake Quiz</button>
+  </section>
+
+  <footer>
+    <p>© 2024 Mental Health Fitness Guide. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/mental_guidance.js"></script>
+</body>
+</html>

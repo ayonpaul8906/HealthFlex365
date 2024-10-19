@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: #28a745;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .selector {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  #goalSelector {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  #planDetails {
+    margin-top: 30px;
+  }
+  
+  .plan-card {
+    background: white;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .plan-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .plan-card img {
+    width: 20%;
+    height: 20%;
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #28a745;
+    color: white;
+  }
+  
+  footer:hover {
+    background-color: #218838;
+  }
+  
+  #nutritionDetails {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .symbol {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    header nav ul li {
+      margin: 10px 0;
+    }
+  
+    .plan-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .plan-card img {
+      margin: 0 auto 20px;
+    }
+  }
+  

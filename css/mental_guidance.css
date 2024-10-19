@@ -1,0 +1,141 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #e0f7fa;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.quiz-section {
+    padding: 2rem;
+}
+
+.quiz-section h2, .result-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.quiz-section form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.question {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input, select {
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+button[type="submit"], .large-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem; /* Space above the button */
+}
+
+.result-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #e0f7fa; /* Light background for results */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 20px; /* Margin around the result section */
+}
+
+.guidance-output {
+    text-align: left; /* Align text to the left for better readability */
+    max-width: 600px; /* Limit width for better layout */
+    margin: 0 auto; /* Center the output div */
+    padding: 1rem; /* Inner padding */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners for the guidance box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.guidance-output h3 {
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.guidance-output p {
+    margin-bottom: 1rem; /* Space between paragraphs */
+    line-height: 1.6; /* Improved line height for readability */
+    font-size: 1rem; /* Standard font size */
+    transition: transform 0.2s ease; /* Effect for hover */
+}
+
+.guidance-output p:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+footer {
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Funzone</title>
+    <link rel="stylesheet" href="css/funzone.css">
+</head>
+<body>
+    <header>
+        <h1>Exercise Funzone</h1>
+        <nav>
+            <ul>
+                <li><a href="#challenges">Challenges</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#random-exercise">Random Exercise</a></li>
+                <li><a href="#avatar">Customize Avatar</a></li>
+                <li><a href="#music">Workout Music</a></li>
+                <li><a href="#polls">Polls</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="challenges">
+            <h2>Fitness Challenges</h2>
+            <p>Join our monthly challenges and earn badges!</p>
+            <button onclick="alert('You are now enrolled in the 30-day Plank Challenge!')">Join 30-Day Plank Challenge</button>
+            <button onclick="alert('You are now enrolled in the Daily Step Count Competition!')">Join Step Count Competition</button>
+        </section>
+
+        <section id="games">
+            <h2>Interactive Games</h2>
+            <button onclick="startJumpingJackGame()">Jumping Jack Game</button>
+            <button onclick="openQuiz()">Take Fitness Quiz</button>
+            <div id="quiz" class="quiz-section" style="display: none;">
+                <h3>Fitness Quiz</h3>
+                <div id="quiz-container"></div>
+                <button id="submit-quiz" style="display:none;" onclick="submitQuiz()">Submit Quiz</button>
+                <p id="quiz-result"></p>
+            </div>
+        </section>
+
+        <section id="random-exercise">
+            <h2>Random Exercise Generator</h2>
+            <button onclick="generateRandomExercise()">Get Random Exercise</button>
+            <p id="random-exercise-output"></p>
+        </section>
+
+        <section id="avatar">
+            <h2>Customize Your Avatar</h2>
+            <p>Customize your avatar as you achieve fitness goals!</p>
+            <button onclick="alert('Avatar customization feature coming soon!')">Customize Avatar</button>
+        </section>
+
+        <section id="music">
+            <h2>Workout Music Playlist</h2>
+            <p>Listen to curated playlists to energize your workout!</p>
+            <button onclick="alert('Check out the playlists on our music page!')">Explore Playlists</button>
+        </section>
+
+        <section id="polls">
+            <h2>Exercise Polls</h2>
+            <p>What’s your favorite way to burn calories?</p>
+            <button onclick="alert('Poll feature coming soon!')">Vote Now!</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exercise Funzone. All rights reserved.</p>
+    </footer>
+
+    <script src="js/funzone.js"></script>
+</body>
+</html>

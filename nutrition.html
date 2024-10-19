@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Nutritional Guide</title>
+  <link rel="stylesheet" href="css/nutrition.css">
+</head>
+<body>
+  <header>
+    <h1>Simple Homemade Nutritional Guide</h1>
+ </header>
+
+  <main class="container">
+    <!-- Goal Selection with icons -->
+    <div class="selector">
+      <label for="goalSelector">Choose Your Goal:</label>
+      <select id="goalSelector">
+        <option value="">-- Select a Goal --</option>
+        <option value="fat-burn" aria-label="Fat Burn">Fat Burn 🏃‍♂</option>
+        <option value="muscle-build" aria-label="Muscle Build">Muscle Build 💪</option>
+        <option value="balanced" aria-label="Balanced">Balanced 🍽</option>
+      </select>
+    </div>
+
+    <!-- Detailed meal plan section -->
+    <div id="planDetails"><p>Please select a goal to see the meal plan.</p></div>
+
+    <!-- Nutritional breakdown with symbols -->
+    <div id="nutritionDetails"></div>
+  </main>
+
+  <footer>
+    <p>© 2024 Indian Nutritional Guide | Eat Healthy, Stay Fit!</p>
+  </footer>
+
+  <script src="js/nutrition.js"></script>
+</body>
+</html>

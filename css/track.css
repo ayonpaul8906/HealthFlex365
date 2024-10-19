@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(https://i.postimg.cc/k554995T/workout.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    max-width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #2A227D;
+    margin: 0;
+}
+
+.question-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#question {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    padding: 12px;
+    margin: 5px 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.option:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+}
+
+.option.selected {
+    background-color: #4F84CF;
+    border-color: #badbcc;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary {
+    background-color: #2A227D;
+}
+
+.btn-primary:hover {
+    background-color: #2A227D;
+    transform: translateY(-2px);
+}
+
+.btn:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
